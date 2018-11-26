@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CArray.h" />
+    <ClInclude Include="CArrayIterator.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>

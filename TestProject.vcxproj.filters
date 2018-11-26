@@ -21,6 +21,9 @@
     <ClInclude Include="CArray.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="CArrayIterator.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
