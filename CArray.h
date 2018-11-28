@@ -1,7 +1,7 @@
 #pragma once
 #include "CArrayIterator.h"
 
-#define CARRAY_DEFAULT_CAPACITY 4
+#define CARRAY_DEFAULT_CAPACITY 32
 
 template <typename TData>
 class CArray
@@ -161,7 +161,23 @@ public:
     return CArrayIterator<const TData>(array + array_size);
   }
   
-
+  void sort()
+  {
+    bool b = true;
+    int sz = array_size;
+    while (b) {
+      b = false;
+      for (int i = 0; i < sz - 1; i++)
+      {
+        if (i >= 0 && array[i] > array[i + 1])
+        {
+          std::swap(array[i], array[i + 1]);
+          b = true;
+        }
+      }
+      sz--;
+    }
+  }
 
 private:
 

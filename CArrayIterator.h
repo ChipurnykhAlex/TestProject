@@ -4,7 +4,6 @@
 template <typename T>
 class CArrayIterator: public std::iterator<std::input_iterator_tag, T>
 {
-  //friend class CArray;
 public:
   CArrayIterator(
     T* _p
@@ -13,7 +12,7 @@ public:
   {
   }
 
-public:
+
   CArrayIterator(
     const CArrayIterator& _it
   )
@@ -51,14 +50,6 @@ public:
     --p;
     return *this;
   }
-  /*
-  CArrayIterator& operator-(
-    const CArrayIterator& _iterator
-    )
-  {
-    return p - _iterator.p;
-  }
-  */
 
 private:
   T* p;
